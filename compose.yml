@@ -1,0 +1,10 @@
+services:
+  deposit-batch:
+    build: .
+    container_name: deposit-batch
+    env_file:
+      - .env
+    volumes:
+      - ./log:/app/log
+    working_dir: /app
+
